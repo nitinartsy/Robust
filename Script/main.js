@@ -2,7 +2,7 @@ var swiper = new Swiper(".mySwiper", {
   effect: "cards",
   grabCursor: true,
   autoplay: true,
-  autoplaySpeed: 800,
+  autoplaySpeed: 50,
 });
 
 // // // // 
