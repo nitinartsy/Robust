@@ -14,6 +14,8 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="Style/ProductsEdit.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/Products.css">
 </head>
 
 <body>
@@ -115,21 +117,40 @@
                 </div>
             </div>
         </div>
-        <div class="w-50 p-3">
-            <div class="pb-4 edit-container-info-section">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa autem pariatur ullam
-                    laudantium, nostrum facilis aut delectus provident amet, et ipsa molestiae quibusdam facere.
-                </p>
-                <button onclick="myFunction()" class="btttn-pop">Instant quote</button>
-
-                <div id="myDIV" style="display:none;">
-                    <div onclick="myFunction()" class="btttn-pop">Instant quote</div>
-                This is my DIV element.
+        <div class=" Product-editor  w-50 p-3 ">
+            <div class=" edit-container-info-section">
+                    <div class="m-4">
+                        <h1>Edit Your Design</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa autem pariatur ullam
+                            laudantium, nostrum facilis aut delectus provident amet, et ipsa molestiae quibusdam facere.
+                        </p>
+                    </div>
+                    <!-- pop up section start -->
+                <div id="myDIV" style="display:none;">  
+                    <svg onclick="myFunction()" class="pop-up-btn" viewBox="2 2 20 20"
+                        style="display: inline-block; color: rgba(0, 0, 0, 0.87); fill: rgb(255, 255, 255); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; top: -9px; left: -10px;">
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                        </path>
+                    </svg>
+                    <h3 class="mb-5">Instant quote</h3>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity (between 1 and 5):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        <hr />
+                        <label for="quantity">Quantity (between 1 and 5):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        <hr />
+                        <label for="quantity">Quantity (between 1 and 5):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        <hr />
+                        <button class="btttn-pop">Submit</button>
+                    </form>
                 </div>
+                <!-- pop up section end -->
             </div>
             <hr>
-            <div class="choose-color-container pb-4">
+            <div class="choose-color-container  m-4">
                 <h5 class="">
                     <span class="product-step">1</span>
                     <span class="product-caption">Choose your colors</span>
@@ -155,37 +176,194 @@
                 </div>
             </div>
             <hr>
-            <div class="uplaod-img-section">
+            <div class="uplaod-img-section m-4">
                 <h5 class="">
                     <span class="product-step">2</span>
                     <span class="product-caption">Upload your design</span>
                 </h5>
-                  <div class="container">
+                <div class="container pt-3">
                     <div class="form-group " x-data="{ fileName: '' }">
-                      <div class="input-group shadow-none">
-                        <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
-                        <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" class="d-none">
-                        <input type="text" class="form-control form-control-lg" placeholder="Upload Front Image" x-model="fileName">
-                        <button class="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> Browse</button>
-                      </div>
+                        <div class="input-group shadow-none">
+                            <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
+                            <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]"
+                                class="d-none">
+                            <input type="text" class="form-control form-control-lg" placeholder="Upload Front Image"
+                                x-model="fileName">
+                            <button class="browse btn btttn-pop px-4" type="button"
+                                x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> Browse</button>
+                        </div>
                     </div>
                     <div class="form-group" x-data="{ fileName: '' }">
                         <div class="input-group shadow-none">
-                          <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
-                          <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" class="d-none">
-                          <input type="text" class="form-control form-control-lg" placeholder="Upload Back Image" x-model="fileName">
-                          <button class="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> Browse</button>
+                            <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
+                            <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]"
+                                class="d-none">
+                            <input type="text" class="form-control form-control-lg" placeholder="Upload Back Image"
+                                x-model="fileName">
+                            <button class="browse btn btttn-pop px-4" type="button"
+                                x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> Browse</button>
                         </div>
-                      </div>
-                  </div>
-                  
+                    </div>
+                </div>
+
             </div>
-
-
+            <hr>
+            <button onclick="myFunction()" class="btttn-pop m-4">Instant quote</button>
         </div>
     </div>
 
- 
+
+
+    <div class="products-card mt-5">
+        <figure class="snip1423">
+            <img src="Assests/pimg-1.jpg" alt="sample57" />
+            <figcaption>
+              <h3>tshirt print</i></h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id..</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>
+           <i class="fa fa-cart-plus"></i>
+            <a href="ProducEdit.html"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-2.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bags</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.\</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>    	
+            <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-1.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bottle</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id..</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>
+           <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-2.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bags</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.\</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>    	
+            <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-1.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bottle</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id..</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>
+           <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-2.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bags</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.\</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>    	
+            <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-1.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bottle</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id..</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>
+           <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-2.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bags</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.\</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>    	
+            <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-1.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bottle</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id..</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>
+           <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1423">
+            <img src="Assests/pimg-2.jpg" alt="sample57" />
+            <figcaption>
+              <h3>Bags</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.\</p>
+              <div class="price">
+                <s>₹240.00</s>₹190.00
+              </div>
+            </figcaption>    	
+            <i class="fa fa-cart-plus"></i>
+            <a href="#"></a>
+          </figure>
+     </div>
+  
+<!-- footer start-->
+
+
+<footer>
+
+<div class="footer-content">
+  <h3>Robust</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis scelerisque, gravida sapien non,
+    cursus augue. Aenean id pretium turpis. Suspendisse eros nunc, sollicitudin nec.</p>
+  <ul class="socials">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+  </ul>
+</div>
+<div class="footer-bottom">
+  <p>Copyright &copy <span id="year"></span> <a href="#">@Robust</a> </p>
+</footer>
+
+
+
+
+<!-- footer end -->
+
+
 
 
 </body>
@@ -223,15 +401,16 @@
 
 <script>
     function myFunction() {
-      var x = document.getElementById("myDIV");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
     }
-    </script>
-    
+</script>
+
+
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"></script>
 
 </html>

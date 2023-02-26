@@ -183,12 +183,29 @@ nav .links ul {
 }
 
 /* Modal Content */
-#myDIV{
+#myDIV {
   display: block;
   position: fixed;
-  background: red;
-  top: 141px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  top: 86px;
+  width: 470px;
+  height: 100%;
   right: 0px;
-  padding: 200px;
+  padding: 50px;
   z-index: 200000;
 }
+.pop-up-btn{
+  position: absolute;
+  top: -9px;
+  left: -10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #ce5939;
+}
+hr{
+  background-color: rgb(182 182 182);
+}
+
+
