@@ -41,6 +41,7 @@ nav .links ul {
 .row{
     width: caLc( 100% - 10%);
     margin: auto;
+    justify-content: center;
 }
 .container {
     position: relative;
@@ -111,7 +112,11 @@ nav .links ul {
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 12.66%;
+  }
+  .column:hover{
+    border: 2px solid red;
+    border-radius: 5px;
   }
   
   /* Add a transparency effect for thumnbail images */
@@ -144,9 +149,7 @@ nav .links ul {
     outline: none;
     cursor: pointer;
   }
-  .color-select button{
-      margin-left: 12px;
-  }
+
   .circle-border:hover{
     border: 1px solid #ce5939;
   }
@@ -161,7 +164,16 @@ nav .links ul {
     padding: 10px 20px;
     border: none;
     background: #ce5939;
+    height: fit-content;
     color: #ffffff;
+}
+
+.btttn-pop-1 {
+  padding: 12px 20px;
+  border: none;
+  background: #ce5939;
+  height: fit-content;
+  color: #ffffff;
 }
 
 
@@ -209,3 +221,80 @@ hr{
 }
 
 
+.prev:hover, .next:hover {
+  background-color: rgb(206 89 57);
+  color: white;
+}
+
+
+.btn-ex{
+  border: 1px solid transparent;
+    font-family: avertaregular,San Francisco,Roboto,Segoe UI,Helvetica Neue,Lucida Grande,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin: 3px 3px 10px;
+    color: white;
+    background-color: #ce5939;
+    min-width: 157px;
+    padding: 6px;
+    text-align: center;
+    text-transform: none;
+    transition: all .2s ease-in-out;
+}
+.btn-ex:hover{
+  border: 1px solid #ce5939;
+    font-family: avertaregular,San Francisco,Roboto,Segoe UI,Helvetica Neue,Lucida Grande,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin: 3px 3px 10px;
+    color: #ce5939;
+    background-color: #ffffff;
+    min-width: 157px;
+    padding: 6px;
+    text-align: center;
+    text-transform: none;
+    transition: all .2s ease-in-out;
+}
+
+.btn-ex-1{
+  border: 1px solid black;
+    font-family: avertaregular,San Francisco,Roboto,Segoe UI,Helvetica Neue,Lucida Grande,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin: 3px 3px 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    min-width: 157px;
+    padding: 6px;
+    text-align: center;
+    text-transform: none;
+    transition: all .2s ease-in-out;
+}
+.btn-ex-1:hover{
+  border: 1px solid #ce5939;
+    font-family: avertaregular,San Francisco,Roboto,Segoe UI,Helvetica Neue,Lucida Grande,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin: 3px 3px 10px;
+    color: #ce5939;
+    background-color: #ffffff;
+    min-width: 157px;
+    padding: 6px;
+    text-align: center;
+    text-transform: none;
+    transition: all .2s ease-in-out;
+}
+
+
+/*  */
+button.circle-border {
+  margin-right: 25px;
+}

@@ -57,27 +57,27 @@
 
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+                <img src="Assests/mokup1.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%">
+                <img src="Assests/mokup2.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+                <img src="Assests/mokup.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%">
+                <img src="Assests/mokup2.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+                <img src="Assests/mokup.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -91,40 +91,46 @@
 
             <!-- Thumbnail images -->
             <div class="row">
+                
                 <div class="column">
-                    <img class="demo cursor" src="Assests/mokup.png" style="width:100%" onclick="currentSlide(1)"
+                    <img class=" cursor" src="Assests/mokup.png" style="width:100%" onclick="currentSlide(1)"
                         alt="The Woods">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                    <img class=" cursor" src="Assests/mokup1.png"
                         style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%"
+                    <img class=" cursor" src="Assests/mokup2.png" style="width:100%"
                         onclick="currentSlide(3)" alt="Mountains and fjords">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                    <img class=" cursor" src="Assests/mokup.png"
                         style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%"
+                    <img class=" cursor" src="Assests/mokup2.png" style="width:100%" style="width:100%"
                         onclick="currentSlide(5)" alt="Nature and sunrise">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                    <img class=" cursor" src="Assests/mokup.png"
                         style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                 </div>
             </div>
         </div>
         <div class=" Product-editor  w-50 p-3 ">
-            <div class=" edit-container-info-section">
-                    <div class="m-4">
-                        <h1>Edit Your Design</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa autem pariatur ullam
+            <div class=" edit-container-info-section d-flex justify-content-between align-items-center">
+                    <div class="m-4" style="width: 80%;">
+                        <h2 style="font-weight: bolder; color: #3e3f40;">Ascolour Basic Tshirts</h2>
+                        <p style="font-size: 14px; color: rgba(49,51,54,.6);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa autem pariatur ullam
                             laudantium, nostrum facilis aut delectus provident amet, et ipsa molestiae quibusdam facere.
                         </p>
                     </div>
+                    <div>
+                        <button  class="btn-ex-1 ">Download Sample</button>
+                        <button onclick="myFunction()" class="btn-ex">Instant quote</button>
+                    </div>
+         </div>
                     <!-- pop up section start -->
                 <div id="myDIV" style="display:none;">  
                     <svg onclick="myFunction()" class="pop-up-btn" viewBox="2 2 20 20"
@@ -148,14 +154,14 @@
                     </form>
                 </div>
                 <!-- pop up section end -->
-            </div>
+        
             <hr>
             <div class="choose-color-container  m-4">
                 <h5 class="">
-                    <span class="product-step">1</span>
-                    <span class="product-caption">Choose your colors</span>
+                    <span class="product-step" style="color: #747474; font-size: 25px;"><b>1</b></span>&nbsp;
+                    <span class="product-caption" style="color: #2f3134; font-size: 20px;"><b>Choose your colors</b></span>
                 </h5>
-                <div class="color-select d-flex">
+                <div class="color-select d-flex pt-3 pl-4">
                     <button class="circle-border">
                         <div class="circle" style="background-color: red;">
                         </div>
@@ -178,10 +184,10 @@
             <hr>
             <div class="uplaod-img-section m-4">
                 <h5 class="">
-                    <span class="product-step">2</span>
-                    <span class="product-caption">Upload your design</span>
+                    <span class="product-step" style="color: #747474; font-size: 25px;"><b>2</b></span>&nbsp;
+                    <span class="product-caption" style="color: #2f3134; font-size: 20px;"><b>Upload your design</b></span>
                 </h5>
-                <div class="container pt-3">
+                <div class="container pt-3 pl-4">
                     <div class="form-group " x-data="{ fileName: '' }">
                         <div class="input-group shadow-none">
                             <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
@@ -189,7 +195,7 @@
                                 class="d-none">
                             <input type="text" class="form-control form-control-lg" placeholder="Upload Front Image"
                                 x-model="fileName">
-                            <button class="browse btn btttn-pop px-4" type="button"
+                            <button class="browse btn btttn-pop-1 px-4" type="button"
                                 x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> Browse</button>
                         </div>
                     </div>
@@ -200,15 +206,15 @@
                                 class="d-none">
                             <input type="text" class="form-control form-control-lg" placeholder="Upload Back Image"
                                 x-model="fileName">
-                            <button class="browse btn btttn-pop px-4" type="button"
+                            <button class="browse btn btttn-pop-1 px-4" type="button"
                                 x-on:click.prevent="$refs.file.click()"><i class="fas fa-image"></i> Browse</button>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <hr>
-            <button onclick="myFunction()" class="btttn-pop m-4">Instant quote</button>
+            
+          
         </div>
     </div>
 

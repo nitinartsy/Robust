@@ -181,5 +181,8 @@ a:hover{
 }
 
 
+i.fa.fa-cart-plus {
+    display: none;
+}
 
 /* footer end */
