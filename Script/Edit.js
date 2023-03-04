@@ -17,8 +17,6 @@ jQuery(document).ready(function() {
     });
   });
   
-  // Lorem Ipsum Generator by Luke Jackson
-  // https://codepen.io/lukejacksonn/pen/rCdEb
   (function() {
     jQuery.fn.lorem = function(_length) {
       return this.each(function() {
