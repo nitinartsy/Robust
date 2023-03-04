@@ -54,7 +54,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #5a5a5a;
+    background: #212020;
     height: auto;
     width: 100vw;
     padding-top: 40px;
@@ -114,7 +114,8 @@ footer {
 }
 
 .footer-bottom {
-    background: #232323;
+    
+    background-color: #232323;
     width: 100vw;
     padding: 20px;
     padding-bottom: 40px;

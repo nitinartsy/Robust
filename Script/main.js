@@ -246,3 +246,17 @@ $(".tab").click(function() {
   $("#" + $(this).attr('id').replace("goto", "")).addClass("active");
   $(this).parent().parent().removeClass("active");
 });
+
+
+
+function removeLoader(){
+  
+  setTimeout(()=>{
+     let loader = document.getElementById('loader');
+  
+  // hide the loader
+  loader.style = 'display: none;';
+  },
+  4000);  
+}
+    
