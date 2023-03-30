@@ -9,8 +9,7 @@ var swiper = new Swiper(".mySwiper", {
 // // // // 
 // // // // 
 // // // // // // 
-// // // // // // // // // // 
-// // // // // // // // // 
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -69,11 +68,9 @@ openContentImage = document.getElementById('open-content-image')
 closeContent = document.getElementById('close-content');
 }
 
-/* Attaching three event listeners here:
-- a click event listener for each card
-- a click event listener to the close button
-- a resize event listener on the window
-*/
+
+
+// 
 function attachListeners() {
 for (var i = 0; i < nCards; i++) {
 attachListenerToCard(i);
@@ -104,13 +101,7 @@ openContent.className += ' open';
 }
 
 /*
-* This effect is created by taking a separate 'cover' div, placing
-* it in the same position as the clicked card, and animating it to
-* become the background of the opened 'page'.
-* It looks like the card itself is animating in to the background,
-* but doing it this way is more performant (because the cover div is
-* absolutely positioned and has no children), and there's just less
-* having to deal with z-index and other elements in the card
+// 
 */
 function animateCoverUp(card) {
 // get the position of the clicked card
