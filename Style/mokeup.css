@@ -28,7 +28,7 @@
     width: 50%;
 }
 .automation{
-    background-image: url(/Assests/transbg.png);
+    background-image: url(../Assests/transbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
