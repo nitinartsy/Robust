@@ -865,7 +865,7 @@ img {
 
   .bg-b{
     align-items: center;
-    background-image: url(/Assests/rob-img1.png);
+    background-image: url(../Assests/rob-img1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
